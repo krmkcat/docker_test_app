@@ -1,0 +1,42 @@
+<div id="<%= dom_id shop %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= shop.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Address:</strong>
+    <%= shop.address %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">String:</strong>
+    <%= shop.string %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Phone number:</strong>
+    <%= shop.phone_number %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Url:</strong>
+    <%= shop.url %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Opening hours:</strong>
+    <%= shop.opening_hours %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Chain:</strong>
+    <%= shop.chain %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this shop", shop, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this shop", edit_shop_path(shop), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
