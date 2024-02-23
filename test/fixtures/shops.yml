@@ -3,7 +3,6 @@
 one:
   name: MyString
   address: MyString
-  string: MyString
   phone_number: MyString
   url: MyString
   opening_hours: MyString
@@ -12,7 +11,6 @@ one:
 two:
   name: MyString
   address: MyString
-  string: MyString
   phone_number: MyString
   url: MyString
   opening_hours: MyString
