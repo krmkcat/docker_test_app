@@ -14,13 +14,7 @@ RUN curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash - \
 && wget --quiet -O - /tmp/pubkey.gpg https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
 && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
 && apt-get update -qq \
-&& apt-get install -y build-essential nodejs yarn libpq-dev wget firefox-esr
-
-# Geckodriverのインストール
-RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodriver-v0.32.0-linux64.tar.gz \
-    && tar -xvzf geckodriver-v0.32.0-linux64.tar.gz \
-    && chmod +x geckodriver \
-    && mv geckodriver /usr/local/bin/
+&& apt-get install -y build-essential nodejs yarn libpq-dev
 
 RUN mkdir /app
 WORKDIR /app
