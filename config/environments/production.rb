@@ -91,3 +91,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
+
+Rails.application.config.hosts << "docker-test-app-2lj2.onrender.com"
