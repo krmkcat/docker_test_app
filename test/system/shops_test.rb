@@ -19,7 +19,6 @@ class ShopsTest < ApplicationSystemTestCase
     fill_in "Name", with: @shop.name
     fill_in "Opening hours", with: @shop.opening_hours
     fill_in "Phone number", with: @shop.phone_number
-    fill_in "String", with: @shop.string
     fill_in "Url", with: @shop.url
     click_on "Create Shop"
 
@@ -36,7 +35,6 @@ class ShopsTest < ApplicationSystemTestCase
     fill_in "Name", with: @shop.name
     fill_in "Opening hours", with: @shop.opening_hours
     fill_in "Phone number", with: @shop.phone_number
-    fill_in "String", with: @shop.string
     fill_in "Url", with: @shop.url
     click_on "Update Shop"
 
